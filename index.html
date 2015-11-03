@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<meta name="author" content="ARTIQ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="all" href="fonts/fonts.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+    <script type="text/javascript" src="javascript/jquery-1.11.0.min.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="javascript/html5.js"></script>
+        <script type="text/javascript" src="javascript/selectivizr-min.js"></script>
+    <![endif]-->    
+	<title>ARTIQ</title>
+    
+    <script>
+    $(window).load(function() {
+        setTimeout(function(){
+            $("body a, body input[type='submit'], button").addClass("loaded");    
+        },1000);
+    });
+    
+    $(window).bind('load resize',function(){
+        if($(window).height() < $(".container.top").height() + $(".container.bottom").height()){
+            $(".container.bottom").css('height','auto');
+        } else {
+            $(".container.bottom").css('height',$(window).height() - $(".container.top").height());   
+        }  
+    });
+    </script>
+</head>
+<body>
+	
+    <!-- Content -->
+    <section class="container top">
+        <article class="content">
+        
+            <!-- Logo -->
+            <a id="logo" href="#" title="ARTIQ"><img src="images/logo.png" alt="ARTIQ - Logo" /></a>
+        
+            <p>As Works in Print approaches its sixth birthday, we look hard at what we stand for and where we are going.  Our clients like us because we thoughtfully, intelligently curate art collections for them.  Our artists like us because we treat them fairly and pay them well.  As a team, we are ever pushing forward to expand and grow our client and artist network globally.  From 5 November, we are ARTIQ.</p>
+            
+            <h2><a href="mailto:HELLO@ARTIQ.CO">HELLO@ARTIQ.CO</a></h2>
+        
+        </article>
+    </section>
+    
+    
+    <!-- Content -->
+    <section class="container bottom">
+        <article class="content">
+        
+            <div id="social-icons">
+                <a href="https://twitter.com/worksinprint" target="_blank"><i class="artiq-artiq-twitter"><!-- --></i></a>
+                <a href="https://www.facebook.com/worksinprint/" target="_blank"><i class="artiq-artiq-facebook"><!-- --></i></a>
+                <a href="https://www.linkedin.com/company/works-in-print" target="_blank"><i class="artiq-artiq-linkedin"><!-- --></i></a>
+                <a href="#" target="_blank"><i class="artiq-artiq-pinterest"><!-- --></i></a>
+            </div>
+        
+            <p>If you’re an artist looking to submit your work, please drop us a note on <a href="mailto:&#x68;&#x65;&#x6C;&#x6C;&#x6F;&#x40;&#x61;&#x72;&#x74;&#x69;&#x71;&#x2E;&#x63;&#x6F;">hello@artiq.co</a>.  If you’re an existing client looking to say hi to our team, our email addresses are in the following format: <a href="mailto:&#x66;&#x69;&#x72;&#x73;&#x74;&#x6E;&#x61;&#x6D;&#x65;&#x40;&#x61;&#x72;&#x74;&#x69;&#x71;&#x2E;&#x63;&#x6F;">firstname@artiq.co</a>. For new clients the email is (?) enquiries@artiq.co, whilst all media enquiries should be addressed <a href="mailto:&#x70;&#x72;&#x40;&#x61;&#x72;&#x74;&#x69;&#x71;&#x2E;&#x63;&#x6F;">pr@artiq.co</a>.</p>
+          
+            <!-- Credits -->
+            <a id="credits" href="http://leeharding.co.uk/" target="_blank">website by Harding.</a>
+          
+        </article>
+    </section>
+    
+</body>
+</html>

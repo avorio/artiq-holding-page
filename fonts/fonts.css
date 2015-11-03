@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'artiq';
+	src:url('artiq.eot?byynnv');
+	src:url('artiq.eot?byynnv#iefix') format('embedded-opentype'),
+		url('artiq.ttf?byynnv') format('truetype'),
+		url('artiq.woff?byynnv') format('woff'),
+		url('artiq.svg?byynnv#artiq') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="artiq-"], [class*=" artiq-"] {
+	font-family: 'artiq';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.artiq-artiq-twitter:before {
+	content: "\e900";
+}
+.artiq-artiq-facebook:before {
+	content: "\e901";
+}
+.artiq-artiq-linkedin:before {
+	content: "\e902";
+}
+.artiq-artiq-pinterest:before {
+	content: "\e903";
+}
+
