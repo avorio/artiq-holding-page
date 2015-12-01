@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'artiq';
-	src:url('artiq.eot?byynnv');
-	src:url('artiq.eot?byynnv#iefix') format('embedded-opentype'),
-		url('artiq.ttf?byynnv') format('truetype'),
-		url('artiq.woff?byynnv') format('woff'),
-		url('artiq.svg?byynnv#artiq') format('svg');
+	src:url('artiq.eot?oddh0b');
+	src:url('artiq.eot?oddh0b#iefix') format('embedded-opentype'),
+		url('artiq.ttf?oddh0b') format('truetype'),
+		url('artiq.woff?oddh0b') format('woff'),
+		url('artiq.svg?oddh0b#artiq') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,12 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.artiq-artiq-google:before {
+	content: "\e904";
+}
+.artiq-artiq-instagram:before {
+	content: "\e905";
+}
 .artiq-artiq-twitter:before {
 	content: "\e900";
 }
